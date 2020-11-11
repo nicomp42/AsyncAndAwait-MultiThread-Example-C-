@@ -36,6 +36,9 @@ namespace AsyncAndAwait
             Console.WriteLine("Back in the main() ! Press <Enter> and the entire program will terminate.");
             Console.ReadLine();
         }
+        /// <summary>
+        /// Demonstrate how to invoke a method asynchronously.
+        /// </summary>
         private async void Demo()
         {
             Console.WriteLine("Starting Demo()...");
@@ -53,6 +56,10 @@ namespace AsyncAndAwait
             stopWatch.Stop();
             Console.WriteLine("Elapsed time in milliseconds = " + stopWatch.ElapsedMilliseconds);
         }
+        /// <summary>
+        /// By ityself, this is just another average every-day method. However, we can invokle it asynchronously.
+        /// </summary>
+        /// <returns>Just a number. Doesn't mean anything</returns>
         private int CountAsynchronously()
         {
             Console.WriteLine("Starting to count asynchronously...");
